@@ -34,3 +34,29 @@ convBtn.addEventListener('click', ()=>{
     out2.textContent = `${inputValue} liters = ${lToGallons} gallons | ${lToGallons} gallons = ${inputValue} liters`;
     out3.textContent = `${inputValue} kilos = ${kgToPounds} pounds | ${kgToPounds} pounds = ${inputValue} kilos`; */
 })
+
+
+/* darkmode theme */
+let darkmode = localStorage.getItem('darkmode');
+const btnTheme = document.getElementById('theme-switch');
+
+const enableDarkmode = () =>{
+    document.body.classList.add('darkmode');
+    localStorage.setItem('darkmode', 'active');
+}
+
+const disableDarkmode = () =>{
+    document.body.classList.remove('darkmode');
+    localStorage.setItem('darkmode', null);
+}
+
+if(darkmode === 'active') enableDarkmode();
+
+btnTheme.addEventListener('click', ()=>{
+    darkmode = localStorage.getItem('darkmode')
+    darkmode !== 'active' ? enableDarkmode() : disableDarkmode()
+})
+
+
+
+
