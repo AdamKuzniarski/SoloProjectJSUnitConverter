@@ -1,24 +1,49 @@
+:root{
+    --base-clr: #fff;
+    --box-clr:#ffffff;
+    --bg-clr:#1c1c1c;
+    --bg-clr-main:#F4F4F4;
+    --accent-crl-purple:#6943FF;
+    --accent-crl-lila:#B295FF;
+    --txt-clr-h3:#5a537b;
+    --txt-clr-p:#353535;
+  
+}
+
+.darkmode{
+    --bg-clr:#1c1c1c;
+    --base-clr: #fff;
+    --bg-clr-main:#1F2937;
+    --box-clr:#273549;
+    --accent-crl-purple:#6943FF;
+    --accent-crl-lila:#B295FF;
+    --txt-clr-h3:#CCC1FF;
+    --txt-clr-p:#FFF;
+
+}
+
 *, *::after, *::before{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body{
-    background:#1c1c1c;
+    background:var(--bg-clr);
     font-family: "Inter", sans-serif;
 }
 
 section{
+    
     width: 550px;
     height: 730px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 
 .header-converter{
     width: 550px;
     height: 258px;
-    background:#6943FF;
+    background:var(--accent-crl-purple);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -29,7 +54,7 @@ section{
 .header-converter > h2 {
     margin-top: 33px;
     font-weight: 800;
-    color: #ffffff;
+    color: var(--base-clr);
 
 }
 
@@ -39,9 +64,9 @@ section{
     width: 117px;
     height: 83px;
     border-radius: 5px;
-    border: 2px solid #B295FF;
-    background-color: #6943FF;
-    color: #FFFFFF;
+    border: 2px solid var(--accent-crl-lila);
+    background-color: var(--accent-crl-purple);
+    color:var(--base-clr-white);
     font-size: 58pt;
     font-weight: 900;
     text-align: center;
@@ -58,8 +83,8 @@ header > button{
 
 .main-converter{
     width: 550px;
-    height: 729px;
-    background: #F4F4F4;
+    height: 390px;
+    background: var(--bg-clr-main);
     display: flex;
     justify-content: start;
     align-items: center;
@@ -69,7 +94,7 @@ header > button{
 .box{
     width: 500px;
     height: 108px;
-    background: #ffffff;
+    background: var(--box-clr);
     margin-top: 10px;
     text-align: center;
 
@@ -79,10 +104,11 @@ header > button{
     margin-top: 15px;
     font-weight: 500;
     font-size: 20pt;
-    color: #5a537b;
+    color: var(--txt-clr-h3);
 
 }
 .box > p{
+    color: var(--txt-clr-p);
     margin-top: 15px;
     font-size: 11pt;
 }
