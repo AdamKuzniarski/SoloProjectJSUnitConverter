@@ -1,0 +1,88 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:#1c1c1c;
+    font-family: "Inter", sans-serif;
+}
+
+section{
+    width: 550px;
+    height: 730px;
+    margin: 0 auto;
+}
+
+
+.header-converter{
+    width: 550px;
+    height: 258px;
+    background:#6943FF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.header-converter > h2 {
+    margin-top: 33px;
+    font-weight: 800;
+    color: #ffffff;
+
+}
+
+.header-converter input {
+    margin-top: 30px;
+    padding:10px;
+    width: 117px;
+    height: 83px;
+    border-radius: 5px;
+    border: 2px solid #B295FF;
+    background-color: #6943FF;
+    color: #FFFFFF;
+    font-size: 58pt;
+    font-weight: 900;
+    text-align: center;
+}
+header > button{
+    font-family: inherit;
+    margin-top: 27px;
+    width: 117px;
+    height: 42px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.main-converter{
+    width: 550px;
+    height: 729px;
+    background: #F4F4F4;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box{
+    width: 500px;
+    height: 108px;
+    background: #ffffff;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.box > h3{
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 20pt;
+    color: #5a537b;
+
+}
+.box > p{
+    margin-top: 15px;
+    font-size: 11pt;
+}
